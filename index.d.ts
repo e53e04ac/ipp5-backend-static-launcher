@@ -15,7 +15,7 @@ export declare namespace Ipp5BackendStaticLauncher {
     type EnvMap = {
         readonly TZ: string;
         readonly WEBSITES_PORT: number;
-        readonly CUSTOM_BACKEND_STATIC_APP_HTTP_PATH_PREFIX: string;
+        readonly CUSTOM_BACKEND_STATIC_HTTP_PATH_PREFIX: string;
         readonly CUSTOM_CONTAINER_DOCUMENT_ROOT_DIRECTORY_PATH: string;
         readonly CUSTOM_EXPRESS_ENV: 'production' | 'development';
         readonly CUSTOM_EXPRESS_SUBDOMAIN_OFFSET: number;
@@ -38,7 +38,7 @@ export declare namespace Ipp5BackendStaticLauncher {
         readonly webappResourceGroup: ValueOrGet<string>;
         readonly webappName: ValueOrGet<string>;
         readonly webappDeploymentContainerImageName: ValueOrGet<string>;
-        readonly appHttpPathPrefix: ValueOrGet<string>;
+        readonly backendStaticHttpPathPrefix: ValueOrGet<string>;
         readonly containerDocumentRootDirectoryPath: ValueOrGet<string>;
     };
 

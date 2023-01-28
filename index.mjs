@@ -53,8 +53,8 @@ const constructor = ((options) => {
         webappDeploymentContainerImageName: hold(() => {
             return unwrap(options.webappDeploymentContainerImageName);
         }),
-        appHttpPathPrefix: hold(() => {
-            return unwrap(options.appHttpPathPrefix);
+        backendStaticHttpPathPrefix: hold(() => {
+            return unwrap(options.backendStaticHttpPathPrefix);
         }),
         containerDocumentRootDirectoryPath: hold(() => {
             return unwrap(options.containerDocumentRootDirectoryPath);
@@ -91,7 +91,7 @@ const constructor = ((options) => {
                 map: {
                     TZ: _options.containerTimezoneId(),
                     WEBSITES_PORT: _options.containerAppPort(),
-                    CUSTOM_BACKEND_STATIC_APP_HTTP_PATH_PREFIX: _options.appHttpPathPrefix(),
+                    CUSTOM_BACKEND_STATIC_HTTP_PATH_PREFIX: _options.backendStaticHttpPathPrefix(),
                     CUSTOM_CONTAINER_DOCUMENT_ROOT_DIRECTORY_PATH: _options.containerDocumentRootDirectoryPath(),
                     CUSTOM_EXPRESS_ENV: 'production',
                     CUSTOM_EXPRESS_SUBDOMAIN_OFFSET: 2,
