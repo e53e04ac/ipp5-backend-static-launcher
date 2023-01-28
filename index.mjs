@@ -76,7 +76,7 @@ const constructor = ((options) => {
             return _self.scriptFile().parent();
         }),
         runDirectory: hold(() => {
-            return _options.tmpDirectory().resolve('ipp5-frontend-launcher', _options.launchId());
+            return _options.tmpDirectory().resolve('ipp5-backend-static-launcher', _options.launchId());
         }),
         settingsJson: hold(() => {
             return _self.runDirectory().resolve('settings.json');
