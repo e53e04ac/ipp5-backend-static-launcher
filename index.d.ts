@@ -15,8 +15,6 @@ export declare namespace Ipp5BackendStaticLauncher {
 
     type EnvMap = Ipp5BackendStaticEnvMap;
 
-    type EventSpecs = Record<never, never>;
-
     type Options = {
         readonly az: ValueOrGet<string>;
         readonly docker: ValueOrGet<string>;
@@ -34,6 +32,8 @@ export declare namespace Ipp5BackendStaticLauncher {
         readonly backendStaticHttpPathPrefix: ValueOrGet<string>;
         readonly containerDocumentRootDirectoryPath: ValueOrGet<string>;
     };
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
